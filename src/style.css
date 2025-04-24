@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import 'tailwindcss';
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #14131B 0%, #08070B 100%);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* typografy */
+.text-preset-1{
+  font-size: 2rem;
+  line-height: 2.625rem;
+  letter-spacing: 0;
+}
+.text-preset-2{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
+}
+.text-preset-3{
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+}
+.text-preset-4{
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0;
+}
+
+/* colors */
+.grey-950 {
+  background-color: #08070B;
+}
+.grey-900 {
+  background-color: #14131B;
+}
+.grey-850 {
+  background-color: #18171F;
+}
+.grey-800 {
+  background-color: #24232C;
+}
+.grey-700 {
+  background-color: #54535B;
+}
+.grey-600 {
+  background-color: #817D92;
+}
+.grey-200 {
+  background-color: #E6E5EA;
+}
+.green-200 {
+  background-color: #A4FFAF;
+}
+.yellow-300 {
+  background-color: #F8CD65;
+}
+.orange-400 {
+  background-color: #FB7C58;
+}
+.red-500 {
+  background-color: #F64A4A;
+}
+.gradient-1 {
+  background: linear-gradient(90deg, #14131B 0%, #08070B 100%);
+}
