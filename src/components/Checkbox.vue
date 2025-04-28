@@ -3,11 +3,15 @@ defineProps({
     name: String,
     id: String,
     required: true,
+    checked: Boolean,
+    modelValue: Boolean
+    
 })
+defineEmits(['update:modelValue'])
 </script>
 <template>
     <div class="checkbox-container flex items-center justify-between mb-[2em]">
-        <input type="checkbox" :id="id" class="checkbox" />
+        <input type="checkbox" :id="id" class="checkbox" :checked="modelValue" @change="$emit('update:modelValue', $event.target.checked)" />
         <label :for="id" class="text-[#E6E5EA] text-preset-3">{{name}}</label>
     </div>
 </template>
