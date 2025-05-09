@@ -1,12 +1,15 @@
 <script setup>
-import { ref } from 'vue';
 
-const sliderValue = ref(0); // Initialize the slider value to 0
+defineProps({
+    modelValue: Number
+});
+
+const emit = defineEmits(['update:modelValue']);
 
 function updateSliderValue(event) {
-    const value = event.target.value;
+    const value = Number(event.target.value);
     event.target.style.setProperty('--value', `${value}%`);
-    sliderValue.value = value;
+    emit('update:modelValue', value);
 }
 </script>
 
@@ -14,9 +17,18 @@ function updateSliderValue(event) {
     <div class="slider-container mb-[2em]">
         <div class="label-container flex items-center justify-between mb-[1em]">
             <label for="slider" class="text-[#E6E5EA] text-preset-3">Character Length</label>
-            <span class="text-[#A4FFAF] text-preset-1">{{ sliderValue }}</span>
+            <span class="text-[#A4FFAF] text-preset-1">{{ modelValue }}</span>
         </div>
-        <input id="slider" type="range" min="0" max="100" step="1" class="slider w-full" @input="updateSliderValue" :value="sliderValue" />
+        <input 
+            id="slider" 
+            type="range" 
+            min="1" 
+            max="100" 
+            step="1" 
+            class="slider w-full" 
+            @input="updateSliderValue" 
+            :value="modelValue" 
+        />
     </div>
 </template>
 
