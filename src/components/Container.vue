@@ -9,6 +9,7 @@ import { generateRandomRegex } from '../utils/regexUtils';
 const password = ref(''); // Initialize password as a ref
 const sliderValue = ref(1); // Default character length
 
+
 const checkboxOptions = ref([
   { name: 'Uppercase Letters', id: 'uppercase', checked: false },
   { name: 'Lowercase Letters', id: 'lowercase', checked: false },
@@ -36,7 +37,7 @@ function generatePassword() {
   if (generatedPassword) {
       password.value = generatedPassword;
   } else {
-      console.warn('Password length must be greater than 4 and at least one option must be selected.');
+      alert('Password length must be greater than 12 and at least one option must be selected.');
   }
 }
 </script>
@@ -44,8 +45,9 @@ function generatePassword() {
 <template>
 
   <div class="container">
-    <h1 class="text-[#817D92] text-preset-2 mb-[2em]">Password Generator</h1>
+    <h1 class="text-[#817D92] text-preset-2 mb-[1em]">Password Generator</h1>
     <form @submit.prevent>
+    
       <TextField :password="password" />
       <div class="form-sub-container bg-[#24232C] mt-[2em] p-[2em]">
         <Slider v-model="sliderValue"/>
