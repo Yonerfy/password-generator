@@ -1,5 +1,23 @@
-# Vue 3 + Vite
+# Vue 3 + Vite 🚀
+## Password generator app 💰
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This app will be an excellent test of your HTML, CSS, and JS skills. You'll build custom form controls and use JavaScript to generate random passwords.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+![Design](desktop.png) 🖥️
+![Design](activestates.png) 💻
+![Design](mobiledesign.png) 📱
+
+📝 Brief
+Your challenge is to build out this password generator app and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+-Generate a password based on the selected inclusion options
+-Copy the generated password to the computer's clipboard
+-See a strength rating for their generated password
+-View the optimal layout for the interface depending on their device's screen size
+-See hover and focus states for all interactive elements on the page
+
+[live version]()👨🏾‍💻
